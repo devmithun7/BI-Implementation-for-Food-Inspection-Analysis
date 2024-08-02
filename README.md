@@ -27,21 +27,17 @@ Food inspection data from different cities is often inconsistent and difficult t
 ## Project Description
 Our system comprises these interconnected modules:
 
-**Schema Design with ER Studio:**
+**Data Modelling with ER Studio:**
 - Designed and implemented a star schema for efficient data integration and querying.
 - Ensured consistent data modeling across different data sources.
 
 **Data Profiling and ETL Processes:**
 - Utilized Alteryx and Python for initial data profiling and cleaning.
+
+**ETL and Data Integration:**
 - Developed Talend jobs to load data into fact and dimension tables, ensuring data accuracy and consistency.
 
-**Web Scraping and Data Integration:**
-- Built a webcrawler using AWS Lambda and BeautifulSoup to scrape medical data.
-- Orchestrated the web scraping and data loading processes using Apache Airflow.
 
-**Snowflake for Data Storage and Analysis:**
-- Loaded cleaned and processed data into Snowflake staging tables.
-- Performed data cleaning, formatting, and modeling.
 
 **Visualization with Tableau:**
 - Leveraged Tableau for comprehensive visualization and analysis of integrated food inspection data.
