@@ -1,7 +1,7 @@
 # BI-Implementation-for-Food-Inspection-Analysis
 
 
-
+## Technologes
 ![Talend](https://img.shields.io/badge/Talend-FF6D70?style=for-the-badge&logo=Talend&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)
 ![Alteryx](https://img.shields.io/badge/Alteryx-276DC3?style=for-the-badge&logo=Alteryx&logoColor=white)
