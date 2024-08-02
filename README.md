@@ -11,7 +11,7 @@
 
 
 ## Overview
-The BI Implementation for Food Inspection Analysis project focuses on integrating and analyzing food inspection results from Illinois and Texas. This project aims to ensure data accuracy, streamline data processing, and provide actionable insights through comprehensive visualization, ultimately aiding in improving food safety standards.
+The BI Implementation for Food Inspection Analysis project focuses on integrating and analyzing food inspection results from Dallas and Chicago. This project aims to ensure data accuracy, streamline data processing, and provide actionable insights through comprehensive visualization, ultimately aiding in improving food safety standards.
 
 ## Problem Statement
 Food inspection data from different cities is often inconsistent and difficult to analyze, leading to inefficiencies in monitoring food safety. The lack of unified data formats and comprehensive reporting hinders the ability to identify trends and make informed decisions. This project addresses these challenges by integrating data, ensuring consistency, and providing detailed analysis and visualization.
@@ -47,6 +47,7 @@ Our system comprises these interconnected modules:
 # References
 **Data Source:**
 - [Restaurant and Food Establishment Inspections Dallas Dataset](https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct/data_preview)
+- [Restaurant and Food Establishment Inspections Chicago Dataset](https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5/data_preview)
 
 
 
