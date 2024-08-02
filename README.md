@@ -38,12 +38,15 @@ Our system comprises these interconnected modules:
 - Developed Talend jobs to load data into fact and dimension tables, ensuring data accuracy and consistency.
 
 
+**Visualization with Tableau:**
+- Leveraged Tableau for comprehensive visualization and analysis of integrated food inspection data.
+- Developed KPIs to monitor trends and patterns in inspection outcomes, enabling strategic insights and decision-making for restaurant and food establishment safety.
+
 
 
 # References
 **Data Source:**
+- [Restaurant and Food Establishment Inspections Dallas Dataset](https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct/data_preview)
 
 
-**Visualization with Tableau:**
-- Leveraged Tableau for comprehensive visualization and analysis of integrated food inspection data.
-- Developed KPIs to monitor trends and patterns in inspection outcomes, enabling strategic insights and decision-making for restaurant and food establishment safety.
+
