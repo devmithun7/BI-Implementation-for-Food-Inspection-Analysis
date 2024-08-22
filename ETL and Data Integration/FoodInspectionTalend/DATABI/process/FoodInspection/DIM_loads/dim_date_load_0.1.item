@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_vZclIDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZclITWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZclIjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZclIzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370SU24"/>
+    <contextParameter comment="" internalId="_vZclJDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZclJTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZclJjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_Password" value="enc:system.encryption.key.v1:zF0U50gnEUGrC6lPSzOuvKCFGixkQR/Km0S5tVOmX9iBJqjUFur/HQ=="/>
+    <contextParameter comment="" internalId="_vZdzQDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZdzQTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZdzQjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZdzQzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:zmia+dzOXCGu6wGisfrXSJui316zbLdrLX/BqGbTC2UtkfjAdVnLpw=="/>
+    <contextParameter comment="" internalId="_vZdzRDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_vZdzRTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZdzRjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaUDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZeaUTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_Password" value="enc:system.encryption.key.v1:GpwvodTKCjwtwXTJztn+jYaznpCHxyjS5a6gyp+eWVSG/5wcEW0uDA=="/>
+    <contextParameter comment="" internalId="_vZeaUjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZeaUzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="WorldWideImporters_2"/>
+    <contextParameter comment="" internalId="_vZeaVDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZeaVTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZeaVjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaVzWAEe-sjIw5cVxl0Q" name="start_date" prompt="start_date?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2000-01-01 00:00:00"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter comment="" internalId="_vZclIDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZclITWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZclIjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZclIzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370SU24"/>
+    <contextParameter comment="" internalId="_vZclJDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZclJTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZclJjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_Password" value="enc:system.encryption.key.v1:zF0U50gnEUGrC6lPSzOuvKCFGixkQR/Km0S5tVOmX9iBJqjUFur/HQ=="/>
+    <contextParameter comment="" internalId="_vZdzQDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZdzQTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZdzQjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZdzQzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:zmia+dzOXCGu6wGisfrXSJui316zbLdrLX/BqGbTC2UtkfjAdVnLpw=="/>
+    <contextParameter comment="" internalId="_vZdzRDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_vZdzRTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZdzRjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaUDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZeaUTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_Password" value="enc:system.encryption.key.v1:GpwvodTKCjwtwXTJztn+jYaznpCHxyjS5a6gyp+eWVSG/5wcEW0uDA=="/>
+    <contextParameter comment="" internalId="_vZeaUjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZeaUzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="WorldWideImporters_2"/>
+    <contextParameter comment="" internalId="_vZeaVDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZeaVTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZeaVjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaVzWAEe-sjIw5cVxl0Q" name="start_date" prompt="start_date?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" internalId="_vZclIDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZclITWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZclIjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZclIzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370SU24"/>
+    <contextParameter comment="" internalId="_vZclJDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZclJTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZclJjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_Password" value="enc:system.encryption.key.v1:zF0U50gnEUGrC6lPSzOuvKCFGixkQR/Km0S5tVOmX9iBJqjUFur/HQ=="/>
+    <contextParameter comment="" internalId="_vZdzQDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZdzQTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZdzQjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZdzQzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:zmia+dzOXCGu6wGisfrXSJui316zbLdrLX/BqGbTC2UtkfjAdVnLpw=="/>
+    <contextParameter comment="" internalId="_vZdzRDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_vZdzRTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZdzRjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaUDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZeaUTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_Password" value="enc:system.encryption.key.v1:GpwvodTKCjwtwXTJztn+jYaznpCHxyjS5a6gyp+eWVSG/5wcEW0uDA=="/>
+    <contextParameter comment="" internalId="_vZeaUjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZeaUzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="WorldWideImporters_2"/>
+    <contextParameter comment="" internalId="_vZeaVDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZeaVTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZeaVjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaVzWAEe-sjIw5cVxl0Q" name="start_date" prompt="start_date?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" internalId="_vZclIDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZclITWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZclIjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZclIzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="DAMG7370SU24"/>
+    <contextParameter comment="" internalId="_vZclJDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZclJTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZclJjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="_Ggc2gCeXEe-ie4aK5TQk1g" type="id_Password" value="enc:system.encryption.key.v1:zF0U50gnEUGrC6lPSzOuvKCFGixkQR/Km0S5tVOmX9iBJqjUFur/HQ=="/>
+    <contextParameter comment="" internalId="_vZdzQDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZdzQTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZdzQjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZdzQzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:zmia+dzOXCGu6wGisfrXSJui316zbLdrLX/BqGbTC2UtkfjAdVnLpw=="/>
+    <contextParameter comment="" internalId="_vZdzRDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_vZdzRTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZdzRjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaUDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Server?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_vZeaUTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Password?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_Password" value="enc:system.encryption.key.v1:GpwvodTKCjwtwXTJztn+jYaznpCHxyjS5a6gyp+eWVSG/5wcEW0uDA=="/>
+    <contextParameter comment="" internalId="_vZeaUjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Schema?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_vZeaUzWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Database?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="WorldWideImporters_2"/>
+    <contextParameter comment="" internalId="_vZeaVDWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Login?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_vZeaVTWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_Port?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_vZeaVjWAEe-sjIw5cVxl0Q" name="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCA_STAGE_WWI_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofIaACktEe-n-8mr9F36Mg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_vZeaVzWAEe-sjIw5cVxl0Q" name="start_date" prompt="start_date?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:3Tagrl/EcOmxD3DbVqG98PrkqHLmwKRNx6jXCp87"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:45mq3HJzLmNavum97bt3xcAXR19iTBBlY43DaLfe"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_YeW_gCaEEe-H9Im1u20A6g" name="DataOperation"/>
+    <routinesParameter id="_YeydUCaEEe-H9Im1u20A6g" name="Mathematical"/>
+    <routinesParameter id="_Yf7s0CaEEe-H9Im1u20A6g" name="Numeric"/>
+    <routinesParameter id="_YgfGdiaEEe-H9Im1u20A6g" name="Relational"/>
+    <routinesParameter id="_YYSzwCaEEe-H9Im1u20A6g" name="SQLike"/>
+    <routinesParameter id="_Yg4vECaEEe-H9Im1u20A6g" name="StringHandling"/>
+    <routinesParameter id="_YhdW0CaEEe-H9Im1u20A6g" name="TalendDataGenerator"/>
+    <routinesParameter id="_YhvDoCaEEe-H9Im1u20A6g" name="TalendDate"/>
+    <routinesParameter id="_Yiht0CaEEe-H9Im1u20A6g" name="TalendStringUtil"/>
+    <routinesParameter id="_YiOy4CaEEe-H9Im1u20A6g" name="TalendString"/>
+  </parameters>
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" show="false" value="100000"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="colDate"/>
+      <elementValue elementRef="ARRAY" value="TalendDate.addDate(context.start_date ,Numeric.sequence(&quot;s1&quot;,1,1) ,&quot;dd&quot; )"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRowGenerator_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="colDate" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;addDate&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;date&quot;,&quot;PARAMETER_VALUE&quot;:&quot;context.start_date &quot;},{&quot;PARAMETER_NAME&quot;:&quot;nb&quot;,&quot;PARAMETER_VALUE&quot;:&quot;Numeric.sequence(\&quot;s1\&quot;,1,1) &quot;},{&quot;PARAMETER_NAME&quot;:&quot;dateType&quot;,&quot;PARAMETER_VALUE&quot;:&quot;\&quot;dd\&quot; &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDate&quot;}"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Uk9EYDV_Ee-sjIw5cVxl0Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_date" name="dim_date_load">
+      <column key="false" length="10" name="dim_date_key" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="day_of_week" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="day_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="3" name="day_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="week_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="month" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="12" name="month_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="quarter" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="quarter_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="season" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="season_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="4" name="year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="is_weekend" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="dim_date_load" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Integer.parseInt(TalendDate.formatDate(&quot;yyyyMMdd&quot;,row1.colDate))" name="dim_date_key" type="id_Integer"/>
+        <mapperTableEntries expression="row1.colDate " name="date" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;DAY_OF_WEEK&quot;,row1.colDate) " name="day_of_week" type="id_Integer"/>
+        <mapperTableEntries expression="TalendDate.formatDate(&quot;EEEE&quot;,row1.colDate) " name="day_name" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;DAY_OF_YEAR&quot;,row1.colDate) " name="day_of_year" type="id_Integer"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;WEEK_OF_YEAR&quot;,row1.colDate) " name="week_of_year" type="id_Integer"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) +1 " name="month" type="id_Integer"/>
+        <mapperTableEntries expression="TalendDate.formatDate(&quot;MMMM&quot;,row1.colDate) " name="month_name" type="id_String"/>
+        <mapperTableEntries expression="Mathematical.SDIV(TalendDate.getPartOfDate(&quot;MONTH&quot;, row1.colDate),3) + 1 " name="quarter" type="id_Integer"/>
+        <mapperTableEntries expression="&quot;Q&quot; + (Mathematical.SDIV(TalendDate.getPartOfDate(&quot;MONTH&quot;, row1.colDate),3) + 1) " name="quarter_name" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 == 12 || TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 == 1 || TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 == 2 ? 1 :&#13;&#10;TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &gt;= 3 &amp;&amp; TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &lt;= 5 ? 2 :&#13;&#10;TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &gt;= 6 &amp;&amp; TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &lt;= 8 ? 3 :&#13;&#10;TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &gt;= 9 &amp;&amp; TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &lt;= 11 ? 4 : 0 " name="season" type="id_Integer"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 == 12 || TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 == 1 || TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 == 2 ? &quot;Winter&quot; :&#13;&#10;TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &gt;= 3 &amp;&amp; TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &lt;= 5 ? &quot;Spring&quot; :&#13;&#10;TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &gt;= 6 &amp;&amp; TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &lt;= 8 ? &quot;Summer&quot; :&#13;&#10;TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &gt;= 9 &amp;&amp; TalendDate.getPartOfDate(&quot;MONTH&quot;,row1.colDate) + 1 &lt;= 11 ? &quot;Autumn&quot; : &quot;Unknown&quot; " name="season_name" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,row1.colDate) " name="year" type="id_Integer"/>
+        <mapperTableEntries expression="TalendDate.getPartOfDate(&quot;DAY_OF_WEEK&quot;,row1.colDate)== 1 || TalendDate.getPartOfDate(&quot;DAY_OF_WEEK&quot;,row1.colDate) == 7?1:0 " name="is_weekend" type="id_Integer"/>
+        <mapperTableEntries expression="pid" name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries expression="&quot;dim_date_load&quot;" name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="dw_load_date" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="colDate" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_Uk9EYDV_Ee-sjIw5cVxl0Q-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_date" name="already_present_check">
+      <column key="false" length="10" name="dim_date_key" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="day_of_week" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="day_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="3" name="day_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="week_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="month" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="12" name="month_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="quarter" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="quarter_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="season" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="season_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="4" name="year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="is_weekend" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateCondensedTool="true" name="already_present_check" rejectInnerJoin="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="dim_date_load.dim_date_key" name="dim_date_key" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.date" name="date" type="id_Date"/>
+        <mapperTableEntries expression="dim_date_load.day_of_week" name="day_of_week" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.day_name" name="day_name" type="id_String"/>
+        <mapperTableEntries expression="dim_date_load.day_of_year" name="day_of_year" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.week_of_year" name="week_of_year" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.month" name="month" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.month_name" name="month_name" type="id_String"/>
+        <mapperTableEntries expression="dim_date_load.quarter" name="quarter" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.quarter_name" name="quarter_name" type="id_String"/>
+        <mapperTableEntries expression="dim_date_load.season" name="season" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.season_name" name="season_name" type="id_String"/>
+        <mapperTableEntries expression="dim_date_load.year" name="year" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.is_weekend" name="is_weekend" type="id_Integer"/>
+        <mapperTableEntries expression="dim_date_load.dw_load_job_id" name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries expression="dim_date_load.dw_load_workflow_name" name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries expression="dim_date_load.dw_load_date" name="dw_load_date" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="dim_date_load" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="dim_date_key" type="id_Integer"/>
+        <mapperTableEntries name="date" type="id_Date"/>
+        <mapperTableEntries name="day_of_week" type="id_Integer"/>
+        <mapperTableEntries name="day_name" type="id_String"/>
+        <mapperTableEntries name="day_of_year" type="id_Integer"/>
+        <mapperTableEntries name="week_of_year" type="id_Integer"/>
+        <mapperTableEntries name="month" type="id_Integer"/>
+        <mapperTableEntries name="month_name" type="id_String"/>
+        <mapperTableEntries name="quarter" type="id_Integer"/>
+        <mapperTableEntries name="quarter_name" type="id_String"/>
+        <mapperTableEntries name="season" type="id_Integer"/>
+        <mapperTableEntries name="season_name" type="id_String"/>
+        <mapperTableEntries name="year" type="id_Integer"/>
+        <mapperTableEntries name="is_weekend" type="id_Integer"/>
+        <mapperTableEntries name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" type="id_Date"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="already_present" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="dim_date_load.dim_date_key " name="dim_date_key" type="id_Integer"/>
+        <mapperTableEntries expression="" name="date" type="id_Date"/>
+        <mapperTableEntries name="day_of_week" type="id_BigDecimal"/>
+        <mapperTableEntries name="day_name" type="id_String"/>
+        <mapperTableEntries name="day_of_year" type="id_BigDecimal"/>
+        <mapperTableEntries name="week_of_year" type="id_BigDecimal"/>
+        <mapperTableEntries name="month" type="id_BigDecimal"/>
+        <mapperTableEntries name="month_name" type="id_String"/>
+        <mapperTableEntries name="quarter" type="id_BigDecimal"/>
+        <mapperTableEntries name="quarter_name" type="id_String"/>
+        <mapperTableEntries name="season" type="id_BigDecimal"/>
+        <mapperTableEntries name="season_name" type="id_String"/>
+        <mapperTableEntries name="year" type="id_BigDecimal"/>
+        <mapperTableEntries name="is_weekend" type="id_Boolean"/>
+        <mapperTableEntries name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jWvplI/Lv/6ih5m1OqHGPVyHcOp4fJTPATSnHQiFgcq7xDFk9l7JZNnUitmz3TE8OLbeLwhQJ5fPEQTvmBzwVzsQkgXu0PCDwRAvAuUycGjyg1w="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_date&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="dim_date_key"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_date_key"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_of_week"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_of_year"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="week_of_year"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quarter"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quarter_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="season"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="season_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="year"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_weekend"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_date" name="tDBOutput_1">
+      <column key="false" length="10" name="dim_date_key" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="day_of_week" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="day_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="3" name="day_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="week_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="month" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="12" name="month_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="quarter" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="quarter_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="season" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="season_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="4" name="year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="is_weekend" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="dim_date" name="REJECT">
+      <column key="false" length="10" name="dim_date_key" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="day_of_week" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="20" name="day_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="3" name="day_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="week_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="month" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="12" name="month_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="quarter" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="2" name="quarter_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="season" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="season_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="4" name="year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="1" name="is_weekend" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xjvfUYnaBcuVxrxBgVgfDOznOcpzRhCW00QE1+LbJltGnBduPaPABg9OrHZ7wB9w5mrvibo0ersEwdyautT+a6nwQsYvjpHqLSe7F6qc5hZSzOc="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_date&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.dim_date_key,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.date,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.day_of_week,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.day_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.day_of_year,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.week_of_year,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.\&quot;month\&quot;,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.month_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.quarter,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.quarter_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.season,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.season_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.\&quot;year\&quot;,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.is_weekend,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_date&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_date_key"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_of_week"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_of_year"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="week_of_year"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quarter"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="quarter_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="season"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="season_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="year"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_weekend"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_date" name="tDBInput_1">
+      <column comment="" key="false" length="10" name="dim_date_key" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="day_of_week" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="day_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="day_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="week_of_year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="month" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="month_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="quarter" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="quarter_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="season" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="season_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="year" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="is_weekend" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="dim_date_load" lineStyle="0" metaname="dim_date_load" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="dim_date_load"/>
+  </connection>
+  <connection connectorName="FLOW" label="already_present_check" lineStyle="0" metaname="already_present_check" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="already_present_check"/>
+  </connection>
+  <connection connectorName="FLOW" label="already_present" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="already_present"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_724c243b-fdc3-49e1-ad56-bb8a231790bb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>w5cOjibDzY7bzDUSEM6oVZNeQ6oJ9aGJ3+x1SZXpcOBhN62gXq7PexXUX2Ct1ZOvevk54Uq0Hdmx&#13;
+jpfEnK7ZLQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2fef77d6-30dd-4153-ad15-8fe6775aa864"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cU/BOurW7A8ZRuSbImWZamih7vzlfkaGzBc35QlErIhLRVsmgfCgxQicZy4mepOuLcjG4DN09EQW&#13;
+Xbk8I8H8tw==</DigestValue></Reference></SignedInfo><SignatureValue>dlYW63mfTnM29qzaSa1J9y6C8lVJ47k1t3QlG2sHQK6i7QMBVxNXxwmGRXMFBjrGlXgJbH6silmF&#13;
+C+/MoiiWyEtjd+8+gExOIYqWxF9cIjB+fALeub5vt5xdKmUEgFr6n8QBwGTjy778ANNPqb/Z6xp6&#13;
+bJBkFzaxcgGgQQVFpY+XJfVRJ9G/SM/tTpxan2Gms2o6ZFqOywE45TBE3ZFY6hlTIu0d9DrUAh+B&#13;
+xgxQN3xIgNRLymB2T2RM+Ayr/KrXfBIOZWBQCBW0FvoRzBUnUf2qOCnSpQGaFFJ+ey13F9Y8RyHz&#13;
+AgkjpMSCUXaA0qCrATzstpIJN/B9OExM0L+YgQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2fef77d6-30dd-4153-ad15-8fe6775aa864" Target="#_724c243b-fdc3-49e1-ad56-bb8a231790bb"><Timestamp>2024-06-30 18:19:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Default" xmi:id="_Ggw_kCeXEe-ie4aK5TQk1g">
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="FLOKI" xmi:id="_Ggw_kSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370" xmi:id="_Ggw_kieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dbo" xmi:id="_Ggw_kyeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370SU24" xmi:id="_Ggw_lCeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Ggw_lSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_Ggw_lieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:co0t24JaXz8TsyO3HDHfJNQBtgm8T+5OnfgqDqFDq8BtZVQ59M9/TA==" xmi:id="_Ggw_lyeXEe-ie4aK5TQk1g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Dev" xmi:id="_Ggw_mCeXEe-ie4aK5TQk1g">
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="FLOKI" xmi:id="_Ggw_mSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370" xmi:id="_Ggw_mieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dbo" xmi:id="_Ggw_myeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370SU24" xmi:id="_Ggw_nCeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Ggw_nSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_Ggw_nieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:m3OH+b5Mvo4Cz5lmQwRl2rEQIcuTEB0ND0RtMjDIsHujN36RvrdRWA==" xmi:id="_Ggw_nyeXEe-ie4aK5TQk1g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Test" xmi:id="_Ggw_oCeXEe-ie4aK5TQk1g">
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="FLOKI" xmi:id="_Ggw_oSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370" xmi:id="_Ggw_oieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dbo" xmi:id="_Ggw_oyeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370SU24" xmi:id="_Ggw_pCeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Ggw_pSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_Ggw_pieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:DsoHxDYeI9keSbmijaYuV2/yfGyDsA8nksUrWZCWrneYDf+Qwroxmg==" xmi:id="_Ggw_pyeXEe-ie4aK5TQk1g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" hide="false" name="Prod" xmi:id="_Ggw_qCeXEe-ie4aK5TQk1g">
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Server" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="FLOKI" xmi:id="_Ggw_qSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Login" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370" xmi:id="_Ggw_qieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Schema" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dbo" xmi:id="_Ggw_qyeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Database" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="DAMG7370SU24" xmi:id="_Ggw_rCeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_LOCAL_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Ggw_rSeXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Port" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="1433" xmi:id="_Ggw_rieXEe-ie4aK5TQk1g"/>
+    <contextParameter comment="" name="SQLSERVERCONNECTION_LOCAL_DBO_Password" prompt="SQLSERVERCONNECTION_LOCAL_DBO_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:RqrFuvDRFMiDFujMbYrSkSW9Ooun6M7aYdcun9D9UhO+wnRaCcYxTg==" xmi:id="_Ggw_ryeXEe-ie4aK5TQk1g"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c1e926c3-4513-4986-befc-efafdf041bf4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>w34lzmXNusKioHT6VA+I1s2i/1enzaNeUgrVuAwigNyq5XllYhEu+qJwNkWE0sxFMvnlUpZVIbno&#13;
+LMrBCgLtQg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bdbbbba4-469a-4460-a57a-eb79b098e5e2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ABT8EhvbkLaKL+4I26CXa1YPAUqZXz2p//ciD4UUaCaRl50kHOkXB4mEhze6Pg5ZeLMByX0m8jF6&#13;
++UuF2ddMPw==</DigestValue></Reference></SignedInfo><SignatureValue>ksacKpASu87u3Wwv/yrLzq/t5ZwpHeJEoqdTGCNTetIslT7U0SXZYqMtxvdu05Px8mqRKD4bFAhv&#13;
+6+Ez6Rfcf5Ofg3pqXukNb6IzVL9lp4ahHm781vtKLM85yvjpAEqh8imxB0TxYbeTHLcz71WOQQJg&#13;
+Q264H8OWc8F8N35E26Ri/1YhO0EgyjusGx05rqriF95DKHDZonWO2Ng4GGg7FsJV9TV2IDqU2Brw&#13;
+yDJ7bJTG9inoCrQf6UsORPlqa4/dtZyBF0E3GC9DIj5ML+s0TROfua/2rMRaBOB+FpLyg3H3SAO4&#13;
+Nxi2J5qgA2FkO2srczL+8MoSGeQPX1vE+Pyluw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bdbbbba4-469a-4460-a57a-eb79b098e5e2" Target="#_c1e926c3-4513-4986-befc-efafdf041bf4"><Timestamp>2024-06-11 02:05:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

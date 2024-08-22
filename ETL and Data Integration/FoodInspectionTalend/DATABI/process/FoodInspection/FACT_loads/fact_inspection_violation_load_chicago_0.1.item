@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_o6eBkDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_o6eBkTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_o6eBkjZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_o6eBkzZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_o6eBlDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_o6eBlTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_o6eooDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:ZMfbp8ljl7QoKWqDsQN7a239Oq+cB4t70J9N72aq/4H9Eir1+mH+rA=="/>
+    <contextParameter comment="" internalId="_IbzhYDZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IbzhYTZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_IbzhYjZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IbzhYzZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:k/rLe+ufYQs8RIJJYusnygxpfTU6h2TjPJLOLW86DkeiINsRWNMyzg=="/>
+    <contextParameter comment="" internalId="_IbzhZDZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_IbzhZTZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_IbzhZjZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rGJHkDZqEe-J79mFd4nruA" name="data_source_chicago" prompt="data_source_chicago?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_nI7jwDZtEe-J79mFd4nruA" name="workflow_name" prompt="workflow_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="fact_inspection_violation_load_chicago"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Prod">
+    <contextParameter comment="" internalId="_o6eooTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_o6eoojZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_o6eoozZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_o6eopDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_o6eopTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_o6eopjZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_o6eopzZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:HOt4JRjQfWREDo3GQ15c+FJEgVtFzxVvK0qwfgHHJymaNOodXKk4BA=="/>
+    <contextParameter comment="" internalId="_IbzhZzZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IbzhaDZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_IbzhaTZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IbzhajZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:yNQbfyBIBRvl49uSl1xNK1BQmUgF+rzNt97NsVzRPIhhfdONxUAPsA=="/>
+    <contextParameter comment="" internalId="_IbzhazZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_IbzhbDZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_IbzhbTZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rGJHkTZqEe-J79mFd4nruA" name="data_source_chicago" prompt="data_source_chicago?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_nI7jwTZtEe-J79mFd4nruA" name="workflow_name" prompt="workflow_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="fact_inspection_violation_load_chicago"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Dev">
+    <contextParameter comment="" internalId="_o6eoqDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_o6eoqTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_o6eoqjZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_o6eoqzZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_o6eorDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_o6eorTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_o6eorjZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:n0lraIEFPXnrLV/9Le2b92XkDQymUn3/P4FlxoOFefKjCeieTMBtZA=="/>
+    <contextParameter comment="" internalId="_IbzhbjZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IbzhbzZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_IbzhcDZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IbzhcTZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:LqguE8BP23vSxleCgd+1ZAw2Be93m96sJA7fel96ZX3Hz9mGfcfwAQ=="/>
+    <contextParameter comment="" internalId="_IbzhcjZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_IbzhczZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_IbzhdDZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rGJHkjZqEe-J79mFd4nruA" name="data_source_chicago" prompt="data_source_chicago?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_nI7jwjZtEe-J79mFd4nruA" name="workflow_name" prompt="workflow_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="fact_inspection_violation_load_chicago"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Test">
+    <contextParameter comment="" internalId="_o6eorzZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_o6eosDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_o6eosTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_o6eosjZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_o6eoszZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="stage"/>
+    <contextParameter comment="" internalId="_o6eotDZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_o6eotTZnEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password" prompt="SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Password?" promptNeeded="false" repositoryContextId="_g9LNcDKOEe-LNasFLlP7GA" type="id_Password" value="enc:system.encryption.key.v1:xbN/zoVikZMC1OrhkWkbGMMXb1tjOAdxKXmClDYwqT73+9mxYY2c1Q=="/>
+    <contextParameter comment="" internalId="_IbzhdTZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_IbzhdjZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FLOKI"/>
+    <contextParameter comment="" internalId="_IbzhdzZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_IbzheDZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Password?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_Password" value="enc:system.encryption.key.v1:/q2Tm7aWf8KYc+IEiVQm9wCrEG7cfGS3ZiuKP/9hin+Ez1uyzuGmSA=="/>
+    <contextParameter comment="" internalId="_IbzheTZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="FoodInspection"/>
+    <contextParameter comment="" internalId="_IbzhejZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value="DAMG7370"/>
+    <contextParameter comment="" internalId="_IbzhezZoEe-J79mFd4nruA" name="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams" prompt="SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams?" promptNeeded="false" repositoryContextId="_XVHt8DQWEe-5lYs9c6icrQ" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_rGJHkzZqEe-J79mFd4nruA" name="data_source_chicago" prompt="data_source_chicago?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_nI7jwzZtEe-J79mFd4nruA" name="workflow_name" prompt="workflow_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="fact_inspection_violation_load_chicago"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="36"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="388"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:3Tagrl/EcOmxD3DbVqG98PrkqHLmwKRNx6jXCp87"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:45mq3HJzLmNavum97bt3xcAXR19iTBBlY43DaLfe"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_YeW_gCaEEe-H9Im1u20A6g" name="DataOperation"/>
+    <routinesParameter id="_YeydUCaEEe-H9Im1u20A6g" name="Mathematical"/>
+    <routinesParameter id="_Yf7s0CaEEe-H9Im1u20A6g" name="Numeric"/>
+    <routinesParameter id="_YgfGdiaEEe-H9Im1u20A6g" name="Relational"/>
+    <routinesParameter id="_YYSzwCaEEe-H9Im1u20A6g" name="SQLike"/>
+    <routinesParameter id="_Yg4vECaEEe-H9Im1u20A6g" name="StringHandling"/>
+    <routinesParameter id="_YhdW0CaEEe-H9Im1u20A6g" name="TalendDataGenerator"/>
+    <routinesParameter id="_YhvDoCaEEe-H9Im1u20A6g" name="TalendDate"/>
+    <routinesParameter id="_Yiht0CaEEe-H9Im1u20A6g" name="TalendStringUtil"/>
+    <routinesParameter id="_YiOy4CaEEe-H9Im1u20A6g" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_STFXkDKOEe-LNasFLlP7GA"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1feBck97fLyS2JJcdy68K9pomOWTxlqtxJ6j4bdJ+8/45tlHhKnNBnBqdgANPuul+3gxBBviS8nrDlihjThbg96q4r4fqa/b9bWKU4nAdMmJ4Qq8"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_STFXkDKOEe-LNasFLlP7GA - stg_chicago_inspection_load"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;stg_chicago_inspection_load&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionID,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.DBAName,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.AKAName,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.LicenseNumber,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.FacilityType,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Risk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Address,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.City,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.State,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Zip,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionDate_Str,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionDate,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.InspectionType,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Results,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Violations,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Latitude,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Longitude,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.Location,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_Schema+&quot;\&quot;.stg_chicago_inspection_load&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOOD_INSPECTION_STG_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBAName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AKAName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LicenseNumber"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FacilityType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Risk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Address"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="State"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Zip"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate_Str"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="InspectionType"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Results"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Latitude"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Longitude"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_chicago_inspection_load" name="tDBInput_1">
+      <column comment="" key="false" length="10" name="InspectionID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="DBAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="79" name="AKAName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="LicenseNumber" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="47" name="FacilityType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="Risk" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="51" name="Address" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="City" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2" name="State" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="Zip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="12" name="InspectionDate_Str" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="InspectionDate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="41" name="InspectionType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="Results" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violations" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Latitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Longitude" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="Location" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_d83rkDZnEe-J79mFd4nruA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_chicago_inspection_load" name="to_normalize">
+      <column comment="" key="false" length="10" name="InspectionID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violations" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="to_normalize" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.InspectionID " name="InspectionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.Violations" name="Violations" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="InspectionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="DBAName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AKAName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LicenseNumber" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="FacilityType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Risk" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Address" nullable="true" type="id_String"/>
+        <mapperTableEntries name="City" nullable="true" type="id_String"/>
+        <mapperTableEntries name="State" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Zip" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="InspectionDate_Str" nullable="true" type="id_String"/>
+        <mapperTableEntries name="InspectionDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="InspectionType" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Results" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Violations" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Latitude" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="Longitude" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="Location" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_job_id" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" nullable="true" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" nullable="true" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tNormalize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tNormalize_1"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="NORMALIZE_COLUMN" value="Violations"/>
+    <elementParameter field="TEXT" name="ITEMSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="DEDUPLICATE" value="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="ESCAPE_CHAR" value="ESCAPE_MODE_DOUBLED"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="DISCARD_TRAILING_EMPTY_STR" value="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_chicago_inspection_load" name="tNormalize_1">
+      <column comment="" key="false" length="10" name="InspectionID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violations" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_d83rkDZnEe-J79mFd4nruA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="stg_chicago_inspection_load" name="chicago_cleaned">
+      <column comment="" key="false" length="10" name="InspectionID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="ViolationCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ViolationDescription" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ViolationComments" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="sourceid" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="chicago_cleaned" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.InspectionID" name="InspectionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Violations.matches(&quot;(\\d+)\\.\\s.*&quot;) ? Integer.parseInt(row2.Violations.replaceAll(&quot;(\\d+)\\.\\s.*&quot;, &quot;$1&quot;)) : null " name="ViolationCode" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Violations.matches(&quot;(\\d+)\\.\\s.*?\\s-\\sComments:.*&quot;) ? row2.Violations.replaceAll(&quot;(\\d+)\\.\\s(.*?)(?=\\s-\\sComments:).*&quot;, &quot;$2&quot;).replace(&quot;*&quot;, &quot;&quot;).trim().toUpperCase() : &quot;&quot; " name="ViolationDescription" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Violations.matches(&quot;(\\d+)\\.\\s.*\\s-\\sComments:.*&quot;) ? row2.Violations.replaceAll(&quot;.*\\s-\\sComments:\\s(.*)&quot;, &quot;$1&quot;).trim().toUpperCase() : &quot;&quot; " name="ViolationComments" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="context.data_source_chicago " name="sourceid" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="InspectionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Violations" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_d83rkDZnEe-J79mFd4nruA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_inspection_violation" name="fact_inspection_violation">
+      <column comment="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="FLOW" label="tlogcheck" name="tlogcheck">
+      <column comment="" defaultValue="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateColumnNameFilter="true" activateExpressionFilter="true" columnNameFilter="" name="fact_inspection_violation" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Numeric.sequence(&quot;s1&quot;,1,1) " name="fact_inspection_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="violation_sk.dim_violation_id_sk " name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="row3.fact_inspection_info_sk " name="fact_inspection_info_sk" type="id_Integer"/>
+        <mapperTableEntries expression="chicago_cleaned.ViolationComments " name="Violation_comments" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="chicago_cleaned.sourceid " name="data_source_id" type="id_Integer"/>
+        <mapperTableEntries expression="pid " name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries expression="context.workflow_name " name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="dw_load_date" type="id_Date"/>
+      </outputTables>
+      <outputTables activateCondensedTool="true" name="tlogcheck" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Numeric.sequence(&quot;s1&quot;,1,1) " name="fact_inspection_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="violation_sk.dim_violation_id_sk " name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="row3.fact_inspection_info_sk " name="fact_inspection_info_sk" type="id_Integer"/>
+        <mapperTableEntries expression="chicago_cleaned.ViolationComments " name="Violation_comments" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="chicago_cleaned.sourceid " name="data_source_id" type="id_Integer"/>
+        <mapperTableEntries expression="pid " name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries expression="context.workflow_name " name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="dw_load_date" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="chicago_cleaned" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="InspectionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationCode" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="ViolationDescription" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ViolationComments" nullable="true" type="id_String"/>
+        <mapperTableEntries name="sourceid" nullable="true" type="id_Integer"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" activateExpressionFilter="true" columnNameFilter="" expressionFilter="row3.data_source_id==1" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="fact_inspection_info_sk" type="id_Integer"/>
+        <mapperTableEntries expression="chicago_cleaned.InspectionID " name="inspection_id_nk" operator="=" type="id_Integer"/>
+        <mapperTableEntries name="dim_inspection_type_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_risk_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_restaurant_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_facility_type_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_result_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_geo_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="inspection_date" type="id_Integer"/>
+        <mapperTableEntries name="data_source_id" type="id_Integer"/>
+        <mapperTableEntries name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" type="id_Date"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="violation_sk" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="" name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="chicago_cleaned.ViolationCode  " name="dim_violation_code" type="id_Integer"/>
+        <mapperTableEntries expression="chicago_cleaned.ViolationDescription " name="dim_violation_description" nullable="true" operator="=" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gbS/x4B7rI1V/5+jzEl9a5er8cGX6evGOmoGc+2NzKZNEPp/yQRJF6T6AZGNj3P5QjLDrLFz4C9XvP42XicKKyPXJQlxqQy6Asul4tGEsIl9TVE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fact_inspection_info&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.fact_inspection_info_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.inspection_id_nk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dim_inspection_type_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dim_risk_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dim_restaurant_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dim_facility_type_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dim_result_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dim_geo_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.inspection_date,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.data_source_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_info&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_info_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inspection_id_nk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_inspection_type_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_risk_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_restaurant_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_facility_type_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_result_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_geo_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="inspection_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_source_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_inspection_info" name="tDBInput_2">
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="inspection_id_nk" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_inspection_type_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_risk_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_restaurant_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_facility_type_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_result_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_geo_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="inspection_date" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_d83rkDZnEe-J79mFd4nruA-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="violation_sk" name="violation_sk">
+      <column comment="" key="true" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_code" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dim_violation_description" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" columnNameFilter="row4.data_source_id=1" name="violation_sk" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row4.dim_violation_id_sk " name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="row4.dim_violation_code " name="dim_violation_code" type="id_Integer"/>
+        <mapperTableEntries expression="row4.dim_violation_description.trim()" name="dim_violation_description" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_violation_code" type="id_Integer"/>
+        <mapperTableEntries name="dim_violation_description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="data_source_id" type="id_Integer"/>
+        <mapperTableEntries name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GDP+DJolEJkNPq9jGnVmrQzypxBbbScALQWDItPrhsCLXjnZXE8Ocj26rCPTRlQ6mdefsi8nzrq1kH6FXrVflkt5FJU7hfnWACiIUsRUmqDhDsM="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_violation&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation.dim_violation_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation.dim_violation_code,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation.dim_violation_description,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation.data_source_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.dim_violation&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_violation_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_violation_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_violation_description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_source_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_violation" name="tDBInput_3">
+      <column comment="" key="true" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_code" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="dim_violation_description" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_5"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_d83rkDZnEe-J79mFd4nruA-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_inspection_violation" name="fact_inspection_final">
+      <column comment="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateCondensedTool="true" name="fact_inspection_final" rejectInnerJoin="true" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="max_sk.fact_inspection_violation_id_sk!=0? Numeric.sequence(&quot;s1&quot;,max_sk.fact_inspection_violation_id_sk,1):Numeric.sequence(&quot;s1&quot;,1,1) " name="fact_inspection_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="fact_inspection_violation.dim_violation_id_sk" name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="fact_inspection_violation.fact_inspection_info_sk" name="fact_inspection_info_sk" type="id_Integer"/>
+        <mapperTableEntries expression="fact_inspection_violation.Violation_comments" name="Violation_comments" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="fact_inspection_violation.data_source_id" name="data_source_id" type="id_Integer"/>
+        <mapperTableEntries expression="fact_inspection_violation.dw_load_job_id" name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries expression="fact_inspection_violation.dw_load_workflow_name" name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries expression="fact_inspection_violation.dw_load_date" name="dw_load_date" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="fact_inspection_violation" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="fact_inspection_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="fact_inspection_info_sk" type="id_Integer"/>
+        <mapperTableEntries name="Violation_comments" nullable="true" type="id_String"/>
+        <mapperTableEntries name="data_source_id" type="id_Integer"/>
+        <mapperTableEntries name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" type="id_Date"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="max_sk" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="fact_inspection_violation_id_sk" type="id_Integer"/>
+      </inputTables>
+      <inputTables activateCondensedTool="true" innerJoin="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="current_table" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="fact_inspection_violation.dim_violation_id_sk " name="dim_violation_id_sk" operator="=" type="id_Integer"/>
+        <mapperTableEntries expression="fact_inspection_violation.fact_inspection_info_sk " name="fact_inspection_info_sk" operator="=" type="id_Integer"/>
+        <mapperTableEntries expression="fact_inspection_violation.Violation_comments " name="Violation_comments" nullable="true" operator="=" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1568" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IqIAmhEkDvAFCHwu1ZDF1g1bHyPgeCme2z9mCTq3VJgXhBq0G718BnTlbCHXDQypAdAS6vpRlU5Wh6+9EWXuBqzZyHTcLIxQSh2uJq7C8izFlP4="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fact_inspection_violation&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="fact_inspection_violation_id_sk"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ - fact_inspection_violation"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_violation_id_sk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_violation_id_sk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_info_sk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_comments"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_source_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_inspection_violation" name="tDBOutput_1">
+      <column comment="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="fact_inspection_violation" name="REJECT">
+      <column comment="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="1" offsetLabelY="-7" posX="1248" posY="-320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAggregateRow_1"/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="fact_inspection_violation_id_sk"/>
+      <elementValue elementRef="FUNCTION" value="max"/>
+      <elementValue elementRef="INPUT_COLUMN" value="fact_inspection_violation_id_sk"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tAggregateRow_1">
+      <column comment="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="-128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_6"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_d83rkDZnEe-J79mFd4nruA-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="current_table" name="current_table">
+      <column comment="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="current_table" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row5.dim_violation_id_sk" name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries expression="row5.fact_inspection_info_sk " name="fact_inspection_info_sk" type="id_Integer"/>
+        <mapperTableEntries expression="row5.Violation_comments.trim() " name="Violation_comments" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="fact_inspection_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="dim_violation_id_sk" type="id_Integer"/>
+        <mapperTableEntries name="fact_inspection_info_sk" type="id_Integer"/>
+        <mapperTableEntries name="Violation_comments" nullable="true" type="id_String"/>
+        <mapperTableEntries name="data_source_id" type="id_Integer"/>
+        <mapperTableEntries name="dw_load_job_id" type="id_String"/>
+        <mapperTableEntries name="dw_load_workflow_name" type="id_String"/>
+        <mapperTableEntries name="dw_load_date" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="-256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:X/NqlGosbN1xIMr3FQWtOvqSxnjMinv9fQU8rhPuPrRnhQHtFR4kki4QG8YfknOw9ZoKstt4PG+Owjv/oI8duw6lbA2Svko4SfMN4Or6citq15I="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ - fact_inspection_violation"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fact_inspection_violation&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.fact_inspection_violation_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dim_violation_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.fact_inspection_info_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.Violation_comments,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.data_source_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_violation_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_violation_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_info_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_comments"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_source_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_inspection_violation" name="tDBInput_4">
+      <column comment="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ"/>
+    <elementParameter field="TEXT" name="HOST" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Bm2DQVaT4ZbdN6QASzyBvP0yDPnxUVxplONGkqApw/FSKUXWhxCJ/LQDGg9d2WRGcvDm5vRXSj732OGFQWEmEbHuFU/qhE5y3CKOTh8MYWcx0kU="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_B4ragDQWEe-5lYs9c6icrQ - fact_inspection_violation"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fact_inspection_violation&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.fact_inspection_violation_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dim_violation_id_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.fact_inspection_info_sk,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.Violation_comments,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.data_source_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dw_load_job_id,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dw_load_workflow_name,&#10;&#9;&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation.dw_load_date&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_Schema+&quot;\&quot;.fact_inspection_violation&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.SQLSERVERCONNECTION_FOODPROCESSING_DBO_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_violation_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_violation_id_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_info_sk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_comments"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_source_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_inspection_violation" name="tDBInput_5">
+      <column comment="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_violation_id_sk"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dim_violation_id_sk"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fact_inspection_info_sk"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Violation_comments"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="data_source_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_job_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_workflow_name"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dw_load_date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="tlogcheck" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="10" name="fact_inspection_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="dim_violation_id_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="fact_inspection_info_sk" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="Violation_comments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="data_source_id" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="dw_load_job_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="dw_load_workflow_name" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="dw_load_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="to_normalize" lineStyle="0" metaname="to_normalize" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tNormalize_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="InspectionID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="to_normalize"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tNormalize_1" offsetLabelX="0" offsetLabelY="0" source="tNormalize_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="chicago_cleaned" lineStyle="0" metaname="chicago_cleaned" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="chicago_cleaned"/>
+  </connection>
+  <connection connectorName="FLOW" label="fact_inspection_violation" lineStyle="0" metaname="fact_inspection_violation" offsetLabelX="-37" offsetLabelY="0" outputId="1" source="tMap_3" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="fact_inspection_violation"/>
+  </connection>
+  <connection connectorName="FLOW" label="tlogcheck" lineStyle="0" metaname="tlogcheck" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_3" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tlogcheck"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="violation_sk" lineStyle="8" metaname="violation_sk" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="violation_sk"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="FLOW" label="fact_inspection_final" lineStyle="0" metaname="fact_inspection_final" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="fact_inspection_final"/>
+  </connection>
+  <connection connectorName="FLOW" label="max_sk" lineStyle="8" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tMap_5">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="fact_inspection_violation_id_sk"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="max_sk"/>
+  </connection>
+  <connection connectorName="FLOW" label="current_table" lineStyle="8" metaname="current_table" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="current_table"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tAggregateRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_831f586f-a721-4ec0-a49e-e0b89744e718"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>G0aKZPSyDEW4+oxJLBcM6SCeXA5sji+6z9h/3FJ8PFByR9NPg8iTGqW/nkqvio4MNlN8mZ0nWVuo&#13;
+nv/e/cduMA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6e0d6446-069a-4ea0-8773-bc8006cdd37b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KNVCsgZpLOxiFFU1KMTshW0cabZqX5lUOJWxVy3t8kiEZJj/NEdpP2a3KSskXJg37wEtyrSVP1sa&#13;
+y2PvVT/17w==</DigestValue></Reference></SignedInfo><SignatureValue>fy0fkNM21WRsb4wJ03P08lQ2FhaT1r6xP/1icWrShhBU2BBLzWVwIYgIp9VGxylYz5Ua5AgHUNDu&#13;
+uAn0O5I6qukenWk8N52zeh3LzCeR1LyFeCpTbXhC85vLaLIxz1WZ70YZk1LVopII8wP9e694IbZh&#13;
+Udfl5pnoKnJFAm7ERM+lqGL47JmjhCy1LWipzgOULlt2pBwK219SnGchl43WU8uVe2GNJqaMLExq&#13;
+Rsv/OvMJ+vdnmGcp254Sd3NndGgavxZMSZnV2F6bZ+IPDEZfSDOo8h3TiI9V1wBYlP+t38L/yz1s&#13;
+aXjswRH8M4pzpkOH0reJh9k1fFRVE9kkwJuvxw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6e0d6446-069a-4ea0-8773-bc8006cdd37b" Target="#_831f586f-a721-4ec0-a49e-e0b89744e718"><Timestamp>2024-06-30 19:42:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
