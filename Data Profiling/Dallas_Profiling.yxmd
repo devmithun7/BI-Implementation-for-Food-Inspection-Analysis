@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMKUM~1\AppData\Local\Temp\Alteryx\Engine_17916_07ec8540fb9d2742935c9fc4bff552a5_\Engine_17916_89341aed086d844a817646ec637eac02~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>True</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>1000000</FieldLen>
+            <SingleThreadRead>True</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>True</QuoteRecordBreak>
+            <CodePage>65001</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Restaurant Name" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Inspection Type" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Inspection Date" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Inspection Score" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Street Number" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Street Name" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Street Direction" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Street Type" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Street Unit" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Street Address" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Zip Code" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 1" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 1" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 1" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 1" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 2" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 2" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 2" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 2" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 3" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 3" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 3" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 3" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 4" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 4" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 4" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 4" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 5" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 5" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 5" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 5" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 6" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 6" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 6" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 6" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 7" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 7" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 7" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 7" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 8" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 8" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 8" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 8" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 9" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 9" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 9" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 9" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 10" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 10" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 10" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 10" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 11" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 11" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 11" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 11" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 12" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 12" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 12" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 12" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 13" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 13" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 13" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 13" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 14" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 14" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 14" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 14" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 15" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 15" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 15" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 15" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 16" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 16" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 16" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 16" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 17" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 17" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 17" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 17" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 18" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 18" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 18" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 18" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 19" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 19" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 19" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 19" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 20" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 20" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 20" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation  Memo - 20" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 21" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 21" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 21" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 21" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 22" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 22" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 22" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 22" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 23" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 23" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 23" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 23" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 24" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 24" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 24" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 24" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Description - 25" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Points - 25" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Detail - 25" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Violation Memo - 25" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Inspection Month" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Inspection Year" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+            <Field name="Lat Long Location" size="1000000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Restaurant_and_Food_Establishment_Inspections__October_2016_to_January_2024__20240623.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="210" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dallas_Profiling</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a6bdd1e5-3825-4618-bbb6-1486eaa5b489" />
+      <Telemetry>
+        <PreviousWorkflowId value="0b1dd5c9-8c7f-4a2b-8e37-0db637d0bcef" />
+        <OriginWorkflowId value="0b1dd5c9-8c7f-4a2b-8e37-0db637d0bcef" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

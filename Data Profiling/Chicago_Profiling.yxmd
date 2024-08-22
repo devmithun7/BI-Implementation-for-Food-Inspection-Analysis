@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2024.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>100000</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Food_Inspections_20240623.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Inspection ID" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="DBA Name" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="AKA Name" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="License #" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Facility Type" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Risk" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Address" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="City" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="State" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Zip" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Inspection Date" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Inspection Type" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Results" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Violations" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Latitude" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Longitude" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+            <Field name="Location" size="100000" source="File: D:\NEU\DATA_BI\FoodLicenseProcessing\Food_Inspections_20240623.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="210" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMKUM~1\AppData\Local\Temp\Alteryx\Engine_3040_7e4c4a497db990409b5abccdf483e633_\Engine_3040_82ef2684b1f9934a862679f30a5b1b01~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Chicago_Profiling</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1c378406-53c0-4049-ae55-901737b7a236" />
+      <Telemetry>
+        <PreviousWorkflowId value="3f527e2e-ee54-4190-af6d-6895040e7ac3" />
+        <OriginWorkflowId value="3f527e2e-ee54-4190-af6d-6895040e7ac3" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
