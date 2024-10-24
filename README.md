@@ -20,8 +20,7 @@ Food inspection data from different cities is often inconsistent and difficult t
 - **ER Studio**: Schema design and data modeling.
 - **Talend**: ETL processes to load data into fact and dimension tables.
 - **Alteryx/Python**: Data profiling and analysis.
-- **Azure SQL**: Data staging and integration.
-- **Snowflake**: Secure and robust data storage and handling.
+- **Snowflake**: Secure and robust data storage and handling of Fact, Stage, and Dimension Tabels.
 - **Tableau**: Visualization and KPI reporting.
 
 ## Project Description
