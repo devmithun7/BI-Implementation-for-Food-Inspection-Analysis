@@ -217,6 +217,10 @@ erDiagram
 - **Referential Integrity**: All foreign keys enforced with constraints
 - **Audit Trail**: Complete lineage tracking through source details dimension
 
+```
+
+---
+
 # References
 **Data Source:**
 - [Restaurant and Food Establishment Inspections Dallas Dataset](https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct/data_preview)
