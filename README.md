@@ -42,7 +42,7 @@ Our system comprises these interconnected modules:
 - Developed KPIs to monitor trends and patterns in inspection outcomes, enabling strategic insights and decision-making for restaurant and food establishment safety.
 
 ## 🔗 Entity Relationship Diagram
-ermaid
+```mermaid
 erDiagram
     %% ============================
     %% DIMENSION TABLES
