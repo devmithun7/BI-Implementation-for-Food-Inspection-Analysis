@@ -42,12 +42,14 @@ Our system comprises these interconnected modules:
 - Developed KPIs to monitor trends and patterns in inspection outcomes, enabling strategic insights and decision-making for restaurant and food establishment safety.
 
 ## 🔗 Entity Relationship Diagram
+
 ```mermaid
 erDiagram
+
     %% ============================
     %% DIMENSION TABLES
     %% ============================
-    
+
     dim_date {
         int dim_date_key PK
         date date
@@ -67,7 +69,7 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_restaurant {
         int dim_restaurant_id_sk PK
         varchar restaurant_name_nk UK
@@ -78,7 +80,7 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_geo {
         int dim_geo_id_sk PK
         varchar street_address
@@ -92,7 +94,7 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_inspection_type {
         int dim_inspection_type_id_sk PK
         varchar inspection_type
@@ -101,7 +103,7 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_risk {
         int dim_risk_id_sk PK
         varchar dim_risk_type
@@ -111,7 +113,7 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_result {
         int dim_result_id_sk PK
         varchar result
@@ -120,7 +122,7 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_facility_type {
         int dim_facility_type_id_sk PK
         varchar facillity_type
@@ -129,28 +131,28 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_violation {
         int dim_violation_id_sk PK
         int dim_violation_code
-        nvarchar dim_violation_description
+        varchar dim_violation_description
         int data_source_id FK
         varchar dw_load_job_id
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     dim_source_details {
         int data_source_id PK
         varchar data_source_name
         varchar dw_load_user
         date dw_load_date
     }
-    
+
     %% ============================
     %% FACT TABLES
     %% ============================
-    
+
     fact_inspection_info {
         int fact_inspection_info_sk PK
         varchar inspection_id_nk UK
@@ -166,45 +168,45 @@ erDiagram
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     fact_inspection_violation {
         int fact_inspection_violation_id_sk PK
         int dim_violation_id_sk FK
         int fact_inspection_info_sk FK
-        nvarchar Violation_comments
+        varchar violation_comments
         int data_source_id FK
         varchar dw_load_job_id
         varchar dw_load_workflow_name
         datetime dw_load_date
     }
-    
+
     %% ============================
     %% RELATIONSHIPS
     %% ============================
-    
-    %% Source Details Relationships
-    dim_source_details ||--o{ dim_restaurant : "data_source_id"
-    dim_source_details ||--o{ dim_geo : "data_source_id"
-    dim_source_details ||--o{ dim_inspection_type : "data_source_id"
-    dim_source_details ||--o{ dim_risk : "data_source_id"
-    dim_source_details ||--o{ dim_result : "data_source_id"
-    dim_source_details ||--o{ dim_facility_type : "data_source_id"
-    dim_source_details ||--o{ dim_violation : "data_source_id"
-    dim_source_details ||--o{ fact_inspection_info : "data_source_id"
-    dim_source_details ||--o{ fact_inspection_violation : "data_source_id"
-    
-    %% Fact Inspection Info Relationships
-    dim_date ||--o{ fact_inspection_info : "inspection_date"
-    dim_restaurant ||--o{ fact_inspection_info : "dim_restaurant_id_sk"
-    dim_geo ||--o{ fact_inspection_info : "dim_geo_id_sk"
-    dim_inspection_type ||--o{ fact_inspection_info : "dim_inspection_type_id_sk"
-    dim_risk ||--o{ fact_inspection_info : "dim_risk_id_sk"
-    dim_result ||--o{ fact_inspection_info : "dim_result_id_sk"
-    dim_facility_type ||--o{ fact_inspection_info : "dim_facility_type_id_sk"
-    
-    %% Fact Inspection Violation Relationships
-    dim_violation ||--o{ fact_inspection_violation : "dim_violation_id_sk"
-    fact_inspection_info ||--o{ fact_inspection_violation : "fact_inspection_info_sk"### **Relationship Summary**
+
+    %% Source Details
+    dim_source_details ||--o{ dim_restaurant : has
+    dim_source_details ||--o{ dim_geo : has
+    dim_source_details ||--o{ dim_inspection_type : has
+    dim_source_details ||--o{ dim_risk : has
+    dim_source_details ||--o{ dim_result : has
+    dim_source_details ||--o{ dim_facility_type : has
+    dim_source_details ||--o{ dim_violation : has
+    dim_source_details ||--o{ fact_inspection_info : has
+    dim_source_details ||--o{ fact_inspection_violation : has
+
+    %% Fact Inspection Info
+    dim_date ||--o{ fact_inspection_info : contains
+    dim_restaurant ||--o{ fact_inspection_info : contains
+    dim_geo ||--o{ fact_inspection_info : contains
+    dim_inspection_type ||--o{ fact_inspection_info : contains
+    dim_risk ||--o{ fact_inspection_info : contains
+    dim_result ||--o{ fact_inspection_info : contains
+    dim_facility_type ||--o{ fact_inspection_info : contains
+
+    %% Fact Inspection Violations
+    dim_violation ||--o{ fact_inspection_violation : contains
+    fact_inspection_info ||--o{ fact_inspection_violation : contains
 
 #### **Star Schema Structure**
 - **Central Fact**: `fact_inspection_info` connects to 7 dimension tables
