@@ -208,16 +208,6 @@ erDiagram
     dim_violation ||--o{ fact_inspection_violation : contains
     fact_inspection_info ||--o{ fact_inspection_violation : contains
 
-#### **Star Schema Structure**
-- **Central Fact**: `fact_inspection_info` connects to 7 dimension tables
-- **Bridge Table**: `fact_inspection_violation` creates many-to-many relationship between inspections and violations
-- **Data Lineage**: All tables reference `dim_source_details` for audit trail
-
-#### **Key Relationships**
-- **One-to-Many**: Each dimension can relate to multiple fact records
-- **Many-to-Many**: Inspections can have multiple violations (via bridge table)
-- **Referential Integrity**: All foreign keys enforced with constraints
-- **Audit Trail**: Complete lineage tracking through source details dimension
 
 ```
 
